@@ -25,18 +25,18 @@ pip install -r requirements.txt
 ### 3. Folder Structure
 
 ```
-semester-1-python/
-├── coursework/
-│   ├── fundamentals/          # Variables, loops, conditionals
-│   ├── web-scraping/          # BeautifulSoup, requests
-│   └── data-structures/       # Lists, dicts, sets, tuples
-├── projects/
-│   ├── simple-calculator/     # CLI calculator
-│   └── web-scraper/           # Real-world scraping project
-├── exercises/
-│   ├── fundamentals/          # Practice problems
-│   ├── web-scraping/          # Scraping challenges
-│   └── data-structures/       # DS problems
+01-semester-python/
+├── 01-coursework/
+│   ├── 01-fundamentals/       # Variables, loops, conditionals
+│   ├── 02-web-scraping/       # BeautifulSoup, requests
+│   └── 03-data-structures/    # Lists, dicts, sets, tuples
+├── 02-exercises/
+│   ├── 01-fundamentals/       # Practice problems
+│   ├── 02-web-scraping/       # Scraping challenges
+│   └── 03-data-structures/    # DS problems
+├── 03-projects/
+│   ├── 01-simple-calculator/  # CLI calculator
+│   └── 02-web-scraper/        # Real-world scraping project
 ├── requirements.txt           # Python dependencies
 └── SETUP.md                   # This file
 ```
@@ -51,12 +51,12 @@ semester-1-python/
 
 ### Run a Python file
 ```bash
-python3 coursework/fundamentals/hello.py
+python3 01-coursework/01-fundamentals/hello.py
 ```
 
 ### Run tests
 ```bash
-pytest exercises/
+pytest 02-exercises/
 ```
 
 ### Deactivate environment
@@ -65,10 +65,10 @@ deactivate
 ```
 
 ## Learning Path
-1. **Week 1-2**: Fundamentals (variables, loops, conditionals)
-2. **Week 3-4**: Data structures (lists, dicts, sets)
-3. **Week 5-6**: Web scraping (BeautifulSoup, requests)
-4. **Week 7-8**: Project (Simple calculator)
+1. **Week 1-2**: Fundamentals (01-coursework/01-fundamentals/)
+2. **Week 3-4**: Data structures (01-coursework/03-data-structures/)
+3. **Week 5-6**: Web scraping (01-coursework/02-web-scraping/)
+4. **Week 7-8**: Projects (03-projects/)
 
 ## Troubleshooting
 

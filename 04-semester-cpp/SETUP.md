@@ -20,7 +20,7 @@ make --version
 
 ### 2. Build with CMake
 ```bash
-cd /Users/arinvashistha/summer2026/semester-4-cpp
+cd /Users/arinvashistha/summer2026/04-semester-cpp
 mkdir -p build
 cd build
 cmake ..
@@ -30,18 +30,18 @@ make
 ### 3. Folder Structure
 
 ```
-semester-4-cpp/
-├── coursework/
-│   ├── fundamentals/          # Syntax, classes, inheritance
-│   ├── oop/                   # Polymorphism, virtual functions
-│   └── stl-algorithms/        # Containers, algorithms, iterators
-├── projects/
-│   ├── game-engine/           # Simple 2D game engine
-│   └── graphics-renderer/     # Graphics rendering project
-├── exercises/
-│   ├── fundamentals/          # Practice problems
-│   ├── oop/                   # OOP challenges
-│   └── stl-algorithms/        # STL exercises
+04-semester-cpp/
+├── 01-coursework/
+│   ├── 01-fundamentals/       # Syntax, classes, inheritance
+│   ├── 02-oop/                # Polymorphism, virtual functions
+│   └── 03-stl-algorithms/     # Containers, algorithms, iterators
+├── 02-exercises/
+│   ├── 01-fundamentals/       # Practice problems
+│   ├── 02-oop/                # OOP challenges
+│   └── 03-stl-algorithms/     # STL exercises
+├── 03-projects/
+│   ├── 01-game-engine/        # Simple 2D game engine
+│   └── 02-graphics-renderer/  # Graphics rendering project
 ├── CMakeLists.txt             # CMake build configuration
 ├── build/                     # Build artifacts (gitignored)
 └── SETUP.md                   # This file
@@ -58,7 +58,7 @@ The CMakeLists.txt includes:
 
 ### Compile a single C++ file
 ```bash
-clang++ -std=c++20 -Wall -Wextra coursework/fundamentals/hello.cpp -o hello
+clang++ -std=c++20 -Wall -Wextra 01-coursework/01-fundamentals/hello.cpp -o hello
 ```
 
 ### Run compiled executable
@@ -90,10 +90,10 @@ rm -rf build/
 - **Utilities**: pair, tuple, optional, variant
 
 ## Learning Path
-1. **Week 1-2**: Fundamentals (classes, inheritance, constructors)
-2. **Week 3-4**: OOP (polymorphism, virtual functions, abstract classes)
-3. **Week 5-6**: STL & Algorithms (containers, algorithms, iterators)
-4. **Week 7-8**: Projects (game engine, graphics renderer)
+1. **Week 1-2**: Fundamentals (01-coursework/01-fundamentals/)
+2. **Week 3-4**: OOP (01-coursework/02-oop/)
+3. **Week 5-6**: STL & Algorithms (01-coursework/03-stl-algorithms/)
+4. **Week 7-8**: Projects (03-projects/)
 
 ## Memory Management in C++
 - Use RAII (Resource Acquisition Is Initialization)

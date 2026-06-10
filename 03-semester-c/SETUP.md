@@ -20,7 +20,7 @@ make --version
 
 ### 2. Build with CMake
 ```bash
-cd /Users/arinvashistha/summer2026/semester-3-c
+cd /Users/arinvashistha/summer2026/03-semester-c
 mkdir -p build
 cd build
 cmake ..
@@ -30,18 +30,18 @@ make
 ### 3. Folder Structure
 
 ```
-semester-3-c/
-├── coursework/
-│   ├── fundamentals/          # Syntax, functions, basic I/O
-│   ├── pointers-memory/       # Pointers, malloc, free, valgrind
-│   └── data-structures/       # Arrays, structs, linked lists
-├── projects/
-│   ├── shell-interpreter/     # Simple shell implementation
-│   └── data-structures-lib/   # Reusable C library
-├── exercises/
-│   ├── fundamentals/          # Practice problems
-│   ├── pointers-memory/       # Memory management challenges
-│   └── data-structures/       # DS implementation
+03-semester-c/
+├── 01-coursework/
+│   ├── 01-fundamentals/       # Syntax, functions, basic I/O
+│   ├── 02-pointers-memory/    # Pointers, malloc, free, valgrind
+│   └── 03-data-structures/    # Arrays, structs, linked lists
+├── 02-exercises/
+│   ├── 01-fundamentals/       # Practice problems
+│   ├── 02-pointers-memory/    # Memory management challenges
+│   └── 03-data-structures/    # DS implementation
+├── 03-projects/
+│   ├── 01-shell-interpreter/  # Simple shell implementation
+│   └── 02-data-structures-lib/ # Reusable C library
 ├── CMakeLists.txt             # CMake build configuration
 ├── build/                     # Build artifacts (gitignored)
 └── SETUP.md                   # This file
@@ -57,7 +57,7 @@ The CMakeLists.txt includes:
 
 ### Compile a single C file
 ```bash
-clang -std=c17 -Wall -Wextra coursework/fundamentals/hello.c -o hello
+clang -std=c17 -Wall -Wextra 01-coursework/01-fundamentals/hello.c -o hello
 ```
 
 ### Run compiled executable
@@ -90,10 +90,10 @@ rm -rf build/
 - ✅ Test with valgrind for leaks
 
 ## Learning Path
-1. **Week 1-2**: Fundamentals (syntax, functions, I/O)
-2. **Week 3-4**: Pointers & Memory (malloc, free, debugging)
-3. **Week 5-6**: Data Structures (arrays, structs, linked lists)
-4. **Week 7-8**: Projects (shell, DS library)
+1. **Week 1-2**: Fundamentals (01-coursework/01-fundamentals/)
+2. **Week 3-4**: Pointers & Memory (01-coursework/02-pointers-memory/)
+3. **Week 5-6**: Data Structures (01-coursework/03-data-structures/)
+4. **Week 7-8**: Projects (03-projects/)
 
 ## Troubleshooting
 

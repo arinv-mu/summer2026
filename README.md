@@ -43,30 +43,62 @@ summer2026/
 │   └── PLAN-3-Learning-Journey.md
 │
 ├── 01-semester-python/             # Python (Semester 1)
-│   ├── coursework/
-│   ├── projects/
-│   ├── exercises/
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-web-scraping/
+│   │   └── 03-data-structures/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-web-scraping/
+│   │   └── 03-data-structures/
+│   ├── 03-projects/
+│   │   ├── 01-simple-calculator/
+│   │   └── 02-web-scraper/
 │   ├── requirements.txt
 │   └── SETUP.md
 │
 ├── 02-semester-java/               # Java (Semester 2)
-│   ├── coursework/
-│   ├── projects/
-│   ├── exercises/
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-collections-framework/
+│   │   └── 03-streams-api/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-collections-framework/
+│   │   └── 03-streams-api/
+│   ├── 03-projects/
+│   │   ├── 01-todo-app-cli/
+│   │   └── 02-library-management/
 │   ├── build.gradle
 │   └── SETUP.md
 │
 ├── 03-semester-c/                  # C (Semester 3)
-│   ├── coursework/
-│   ├── projects/
-│   ├── exercises/
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-pointers-memory/
+│   │   └── 03-data-structures/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-pointers-memory/
+│   │   └── 03-data-structures/
+│   ├── 03-projects/
+│   │   ├── 01-shell-interpreter/
+│   │   └── 02-data-structures-lib/
 │   ├── CMakeLists.txt
 │   └── SETUP.md
 │
 ├── 04-semester-cpp/                # C++ (Semester 4)
-│   ├── coursework/
-│   ├── projects/
-│   ├── exercises/
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-oop/
+│   │   └── 03-stl-algorithms/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-oop/
+│   │   └── 03-stl-algorithms/
+│   ├── 03-projects/
+│   │   ├── 01-game-engine/
+│   │   └── 02-graphics-renderer/
 │   ├── CMakeLists.txt
 │   └── SETUP.md
 │
@@ -154,6 +186,7 @@ python3 filename.py
 
 ### Java
 ```bash
+cd 02-semester-java
 gradle build
 gradle run
 ```

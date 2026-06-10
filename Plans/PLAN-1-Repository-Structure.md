@@ -23,92 +23,64 @@ summer2026/
 ├── .github/
 │   └── workflows/               # Optional: CI/CD pipelines (future)
 │
-├── semester-1-python/           # Semester 1: Python Focus
+├── 01-semester-python/          # Semester 1: Python Focus
 │   ├── SETUP.md                 # Python environment setup (venv, pip)
-│   ├── coursework/
-│   │   ├── fundamentals/
-│   │   │   └── [individual assignment files]
-│   │   ├── web-scraping/
-│   │   │   └── [individual assignment files]
-│   │   └── data-structures/
-│   │       └── [individual assignment files]
-│   ├── projects/
-│   │   ├── simple-calculator/
-│   │   ├── web-scraper/
-│   │   └── [project-name]/
-│   ├── exercises/
-│   │   ├── fundamentals/
-│   │   │   ├── week-1/ through week-4/
-│   │   ├── web-scraping/
-│   │   │   ├── week-5/ through week-8/
-│   │   └── data-structures/
-│   │       ├── week-9/ through week-12/
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-web-scraping/
+│   │   └── 03-data-structures/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-web-scraping/
+│   │   └── 03-data-structures/
+│   ├── 03-projects/
+│   │   ├── 01-simple-calculator/
+│   │   └── 02-web-scraper/
 │   └── requirements.txt         # Python dependencies for semester
 │
-├── semester-2-java/             # Semester 2: Java Focus
+├── 02-semester-java/            # Semester 2: Java Focus
 │   ├── SETUP.md                 # Java + Gradle setup instructions
-│   ├── coursework/
-│   │   ├── fundamentals/
-│   │   │   └── [individual assignment files]
-│   │   ├── collections-framework/
-│   │   │   └── [individual assignment files]
-│   │   └── streams-api/
-│   │       └── [individual assignment files]
-│   ├── projects/
-│   │   ├── todo-app-cli/
-│   │   ├── library-management/
-│   │   └── [project-name]/
-│   ├── exercises/
-│   │   ├── fundamentals/
-│   │   │   ├── week-1/ through week-4/
-│   │   ├── collections-framework/
-│   │   │   ├── week-5/ through week-8/
-│   │   └── streams-api/
-│   │       ├── week-9/ through week-12/
-│   └── pom.xml or build.gradle  # Build configuration
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-collections-framework/
+│   │   └── 03-streams-api/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-collections-framework/
+│   │   └── 03-streams-api/
+│   ├── 03-projects/
+│   │   ├── 01-todo-app-cli/
+│   │   └── 02-library-management/
+│   └── build.gradle             # Build configuration
 │
-├── semester-3-c/                # Semester 3: C Focus
+├── 03-semester-c/               # Semester 3: C Focus
 │   ├── SETUP.md                 # C build instructions (CMake/Make)
-│   ├── coursework/
-│   │   ├── pointers-memory/
-│   │   │   └── [individual assignment files]
-│   │   ├── data-structures/
-│   │   │   └── [individual assignment files]
-│   │   └── file-io-systems/
-│   │       └── [individual assignment files]
-│   ├── projects/
-│   │   ├── ds-library/
-│   │   ├── file-processor/
-│   │   └── [project-name]/
-│   ├── exercises/
-│   │   ├── pointers-memory/
-│   │   │   ├── week-1/ through week-4/
-│   │   ├── data-structures/
-│   │   │   ├── week-5/ through week-8/
-│   │   └── file-io-systems/
-│   │       ├── week-9/ through week-12/
-│   └── CMakeLists.txt or Makefile # Build configuration (root level)
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-pointers-memory/
+│   │   └── 03-data-structures/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-pointers-memory/
+│   │   └── 03-data-structures/
+│   ├── 03-projects/
+│   │   ├── 01-shell-interpreter/
+│   │   └── 02-data-structures-lib/
+│   └── CMakeLists.txt           # Build configuration
 │
-├── semester-4-cpp/              # Semester 4: C++ Focus
+├── 04-semester-cpp/             # Semester 4: C++ Focus
 │   ├── SETUP.md                 # C++ build instructions (CMake)
-│   ├── coursework/
-│   │   ├── oop-design/
-│   │   │   └── [individual assignment files]
-│   │   ├── stl-templates/
-│   │   │   └── [individual assignment files]
-│   │   └── concurrency/
-│   │       └── [individual assignment files]
-│   ├── projects/
-│   │   ├── bank-system/
-│   │   ├── thread-pool/
-│   │   └── [project-name]/
-│   ├── exercises/
-│   │   ├── oop-design/
-│   │   │   ├── week-1/ through week-4/
-│   │   ├── stl-templates/
-│   │   │   ├── week-5/ through week-8/
-│   │   └── concurrency/
-│   │       ├── week-9/ through week-12/
+│   ├── 01-coursework/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-oop/
+│   │   └── 03-stl-algorithms/
+│   ├── 02-exercises/
+│   │   ├── 01-fundamentals/
+│   │   ├── 02-oop/
+│   │   └── 03-stl-algorithms/
+│   ├── 03-projects/
+│   │   ├── 01-game-engine/
+│   │   └── 02-graphics-renderer/
 │   └── CMakeLists.txt           # Build configuration
 │
 └── Plans/                       # All planning documents
@@ -122,28 +94,34 @@ summer2026/
 ## Key Design Principles
 
 ### 1. Semester-First Organization
-- Each top-level folder (`semester-1-python/`, `semester-2-java/`, `semester-3-c/`, `semester-4-cpp/`) represents one semester
+- Each top-level folder (`01-semester-python/`, `02-semester-java/`, `03-semester-c/`, `04-semester-cpp/`) represents one semester
+- Numeric prefixes ensure correct display order in file tree and alphabetical sorting
 - Clear focus: one primary language per semester
 - Chronological learning progression follows university timeline
 - Easy to reference: "In Semester 3, I learned C"
 
 ### 2. Topic-Based Sub-Organization
-Within each semester folder, organize by subject/topic:
-- **coursework/**: University assignments organized by topic/subject
-- **projects/**: Semester-long projects (one or more per semester)
-- **exercises/**: Weekly practice organized by topic
+Within each semester folder, organize by subject/topic with numeric prefixes:
+- **01-coursework/**: University assignments organized by topic/subject
+- **02-exercises/**: Weekly practice organized by topic
+- **03-projects/**: Semester-long projects (one or more per semester)
+- Numeric prefixes (01, 02, 03) ensure correct display order in file tree
 - Allows multiple subjects per semester to be studied concurrently
 - Scalable: Add new topics as needed without restructuring
 
-**Example - Semester 1 (Python)**:
-- `coursework/fundamentals/` → Syntax, variables, operators
-- `coursework/web-scraping/` → Network requests, HTML parsing
-- `coursework/data-structures/` → Lists, dicts, comprehensions
+**Example - 01-semester-python/**:
+- `01-coursework/01-fundamentals/` → Syntax, variables, operators
+- `01-coursework/02-web-scraping/` → Network requests, HTML parsing
+- `01-coursework/03-data-structures/` → Lists, dicts, comprehensions
+- `02-exercises/01-fundamentals/`, etc.
+- `03-projects/01-simple-calculator/`, `03-projects/02-web-scraper/`
 
-**Example - Semester 2 (Java)**:
-- `coursework/fundamentals/` → Syntax, classes, packages
-- `coursework/collections-framework/` → ArrayList, HashMap, generics
-- `coursework/streams-api/` → Functional programming, lambdas
+**Example - 02-semester-java/**:
+- `01-coursework/01-fundamentals/` → Syntax, classes, packages
+- `01-coursework/02-collections-framework/` → ArrayList, HashMap, generics
+- `01-coursework/03-streams-api/` → Functional programming, lambdas
+- `02-exercises/` (same structure)
+- `03-projects/01-todo-app-cli/`, `03-projects/02-library-management/`
 
 ### 3. Build Configuration Isolation
 Each semester maintains its own build system:

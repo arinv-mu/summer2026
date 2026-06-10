@@ -20,18 +20,18 @@ gradle --version
 ### 2. Folder Structure
 
 ```
-semester-2-java/
-├── coursework/
-│   ├── fundamentals/          # Classes, inheritance, interfaces
-│   ├── collections-framework/ # Lists, Sets, Maps
-│   └── streams-api/           # Functional programming, streams
-├── projects/
-│   ├── todo-app-cli/          # CLI task management
-│   └── library-management/    # OOP project
-├── exercises/
-│   ├── fundamentals/          # Practice problems
-│   ├── collections-framework/ # Collections challenges
-│   └── streams-api/           # Streams exercises
+02-semester-java/
+├── 01-coursework/
+│   ├── 01-fundamentals/       # Classes, inheritance, interfaces
+│   ├── 02-collections-framework/  # Lists, Sets, Maps
+│   └── 03-streams-api/        # Functional programming, streams
+├── 02-exercises/
+│   ├── 01-fundamentals/       # Practice problems
+│   ├── 02-collections-framework/  # Collections challenges
+│   └── 03-streams-api/        # Streams exercises
+├── 03-projects/
+│   ├── 01-todo-app-cli/       # CLI task management
+│   └── 02-library-management/ # OOP project
 ├── build.gradle               # Gradle build configuration
 ├── src/main/java/             # Source code directory
 └── SETUP.md                   # This file
@@ -47,8 +47,8 @@ The build.gradle file includes:
 
 ### Compile a single Java file
 ```bash
-cd /Users/arinvashistha/summer2026/semester-2-java
-javac -d . coursework/fundamentals/HelloWorld.java
+cd /Users/arinvashistha/summer2026/02-semester-java
+javac -d . 01-coursework/01-fundamentals/HelloWorld.java
 ```
 
 ### Run compiled class
@@ -80,10 +80,10 @@ src/main/java/
 ```
 
 ## Learning Path
-1. **Week 1-2**: Fundamentals (classes, OOP basics)
-2. **Week 3-4**: Collections Framework (Lists, Sets, Maps)
-3. **Week 5-6**: Streams API (functional programming)
-4. **Week 7-8**: Projects (Todo app, Library management)
+1. **Week 1-2**: Fundamentals (01-coursework/01-fundamentals/)
+2. **Week 3-4**: Collections Framework (01-coursework/02-collections-framework/)
+3. **Week 5-6**: Streams API (01-coursework/03-streams-api/)
+4. **Week 7-8**: Projects (03-projects/)
 
 ## Troubleshooting
 
