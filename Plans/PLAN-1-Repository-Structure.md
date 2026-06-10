@@ -127,38 +127,44 @@ Within each semester folder, organize by subject/topic with numeric prefixes:
 Each semester maintains its own build system:
 
 **Python (Semester 1)**:
-- `semester-1-python/requirements.txt` for dependencies
+- `01-semester-python/requirements.txt` for dependencies
 - `.venv/` virtual environment (ignored by git)
 - Per-project structure: `src/`, `tests/`
 
 **Java (Semester 2)**:
-- `semester-2-java/build.gradle` or `pom.xml` in project root
+- `02-semester-java/build.gradle` or `pom.xml` in project root
 - Standard Maven structure: `src/main/java/`, `src/test/java/`
 - `build/` and `.gradle/` directories (ignored by git)
 
 **C (Semester 3)**:
-- `semester-3-c/CMakeLists.txt` or `Makefile` in project root
+- `03-semester-c/CMakeLists.txt` or `Makefile` in project root
 - `build/` directory for compiled objects (ignored by git)
 - `include/` and `src/` subdirectories per project
 
 **C++ (Semester 4)**:
-- `semester-4-cpp/CMakeLists.txt` in project root
+- `04-semester-cpp/CMakeLists.txt` in project root
 - `build/` directory (ignored by git)
 - `include/`, `src/`, `tests/` subdirectories
 
-### 4. Semester-Specific SETUP.md
+### 4. Numeric Prefixes for Proper Ordering
+- All semester folders use `01-`, `02-`, `03-`, `04-` prefixes for correct alphabetical/tree ordering
+- All subfolder types use `01-`, `02-`, `03-` prefixes (coursework, exercises, projects)
+- All topic folders use `01-`, `02-`, `03-` prefixes within each topic category
+- This ensures proper UI display in VS Code file tree and consistent sorting everywhere
+
+### 5. Semester-Specific SETUP.md
 Each semester includes `SETUP.md` documenting:
 - Language toolchain version and setup
 - Build commands for that semester's projects
 - Testing and debugging procedures
 - IDE/editor configuration specific to the language
 
-### 5. Topic-Based Progress Tracking
-- `coursework/[topic]/` contains numbered or dated assignments
-- `exercises/[topic]/week-X/` organizes practice by topic and week
+### 6. Topic-Based Progress Tracking
+- `0X-coursework/0X-[topic]/` contains numbered or dated assignments
+- `0X-exercises/0X-[topic]/week-X/` organizes practice by topic and week
 - `SEMESTER-NOTES.md` at root tracks overall progress and milestones
 
-### 6. Single Root .gitignore
+### 7. Single Root .gitignore
 Combined `.gitignore` at repository root excludes:
 - **Python**: `__pycache__/`, `*.pyc`, `.venv/`, `env/`, `.pytest_cache/`
 - **Java**: `target/`, `build/`, `.gradle/`, `*.jar`, `.classpath`, `.project`
@@ -170,7 +176,7 @@ Combined `.gitignore` at repository root excludes:
 
 ## Build Configuration File Examples
 
-### Python Project (Semester 1): `semester-1-python/requirements.txt`
+### Python Project (Semester 1): `01-semester-python/requirements.txt`
 ```
 requests==2.31.0
 beautifulsoup4==4.12.2
@@ -180,7 +186,7 @@ matplotlib==3.7.2
 pytest==7.4.0
 ```
 
-### Java Project (Semester 2): `semester-2-java/build.gradle`
+### Java Project (Semester 2): `02-semester-java/build.gradle`
 ```gradle
 plugins {
     id 'java'
@@ -200,7 +206,7 @@ application {
 }
 ```
 
-### C Project (Semester 3): `semester-3-c/CMakeLists.txt`
+### C Project (Semester 3): `03-semester-c/CMakeLists.txt`
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 project(SemesterThree)
@@ -209,13 +215,13 @@ set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # Sub-project for ds-library
-add_subdirectory(projects/ds-library)
+add_subdirectory(03-projects/02-data-structures-lib)
 
 # Exercises
-add_executable(week1-exercise projects/exercises/data-structures/week-1/main.c)
+add_executable(week1-exercise 02-exercises/02-pointers-memory/week-1/main.c)
 ```
 
-### C++ Project (Semester 4): `semester-4-cpp/CMakeLists.txt`
+### C++ Project (Semester 4): `04-semester-cpp/CMakeLists.txt`
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 project(SemesterFour)
@@ -223,11 +229,11 @@ project(SemesterFour)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Sub-project for thread-pool
-add_subdirectory(projects/thread-pool)
+# Sub-project for game-engine
+add_subdirectory(03-projects/01-game-engine)
 
 # Exercises
-add_executable(week1-oop projects/exercises/oop-design/week-1/main.cpp)
+add_executable(week1-oop 02-exercises/02-oop/week-1/main.cpp)
 ```
 
 ---
@@ -294,39 +300,42 @@ dist/
 
 ## Verification Checklist
 
-- [ ] Directory structure matches the semester-wise layout above
-- [ ] Each semester folder (semester-1-python through semester-4-cpp) created
+- [ ] Directory structure matches the semester-wise layout above (01-04 prefixes)
+- [ ] Each semester folder (01-semester-python through 04-semester-cpp) created
 - [ ] Each semester has `SETUP.md` with language-specific build instructions
-- [ ] Each semester has `coursework/`, `projects/`, and `exercises/` subdirectories
-- [ ] Topic-based folders exist within `coursework/` and `exercises/`
+- [ ] Each semester has `01-coursework/`, `02-exercises/`, and `03-projects/` subdirectories
+- [ ] Topic-based folders exist within coursework/exercises with numeric prefixes (01, 02, 03)
 - [ ] Root `.gitignore` exists with combined patterns for all languages
 - [ ] Root `README.md` exists with project overview and learning path
 - [ ] Root `LANGUAGES.md` exists with language guidance
 - [ ] Root `SEMESTER-NOTES.md` created for progress tracking
 - [ ] Run `git status` and verify no build artifacts are staged
 - [ ] `.github/workflows/` folder created (empty for now, for future CI/CD)
-- [ ] All paths are absolute: `/Users/arinvashistha/summer2026/semester-1-python/`, etc.
+- [ ] All paths are absolute: `/Users/arinvashistha/summer2026/01-semester-python/`, etc.
 
 ---
 
 ## Next: Implementation Order
 
-1. Create semester folders: `semester-1-python/`, `semester-2-java/`, `semester-3-c/`, `semester-4-cpp/`
-2. Within each semester, create: `coursework/`, `projects/`, `exercises/` folders
-3. Create topic-based subfolders within `coursework/` and `exercises/`
+1. Create semester folders: `01-semester-python/`, `02-semester-java/`, `03-semester-c/`, `04-semester-cpp/` (with numeric prefixes)
+2. Within each semester, create: `01-coursework/`, `02-exercises/`, `03-projects/` folders (with numeric prefixes)
+3. Create topic-based subfolders within coursework/exercises with numeric prefixes (01, 02, 03)
 4. Create root files: `.gitignore`, `README.md`, `LANGUAGES.md`, `SEMESTER-NOTES.md`
 5. Create `SETUP.md` in each semester folder
-6. Initialize git repository: `git init`
-7. Make initial commit: "Initial semester-wise project structure"
+6. Create build configuration files per semester: `requirements.txt` (Python), `build.gradle` (Java), `CMakeLists.txt` (C/C++)
+7. Initialize git repository: `git init`
+8. Make initial commit: "Initial semester-wise project structure for Electronics Engineering learning"
+
+**Note**: All folder names use numeric prefixes (01-04, 01-03) for consistent ordering in file trees
 
 ---
 
 ## Topic Examples per Semester
 
-**Semester 1 (Python)**: Fundamentals, Web-Scraping, Data-Structures  
-**Semester 2 (Java)**: Fundamentals, Collections-Framework, Streams-API  
-**Semester 3 (C)**: Pointers-Memory, Data-Structures, File-IO-Systems  
-**Semester 4 (C++)**: OOP-Design, STL-Templates, Concurrency
+**Semester 1 (Python)**: 01-Fundamentals, 02-Web-Scraping, 03-Data-Structures  
+**Semester 2 (Java)**: 01-Fundamentals, 02-Collections-Framework, 03-Streams-API  
+**Semester 3 (C)**: 01-Fundamentals, 02-Pointers-Memory, 03-Data-Structures  
+**Semester 4 (C++)**: 01-Fundamentals, 02-OOP, 03-STL-Algorithms
 
 ---
 
