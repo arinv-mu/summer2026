@@ -82,10 +82,10 @@ git log --oneline | head -3
 - Print statements and basic I/O
 
 **Coursework Path**:
-- `semester-1-python/coursework/fundamentals/`
+- `01-semester-python/coursework/fundamentals/`
 
 **Exercises Path**:
-- `semester-1-python/exercises/fundamentals/`
+- `01-semester-python/exercises/fundamentals/`
 
 **Key Milestones**:
 - [ ] Environment setup complete
@@ -178,11 +178,11 @@ Rate from 1-5 (1=Beginner, 5=Expert)
 
 ### Semester 1 (Python)
 - **Project 1**: Simple Calculator
-  - Location: `semester-1-python/projects/simple-calculator/`
+  - Location: `01-semester-python/projects/simple-calculator/`
   - Skills: Functions, loops, error handling
 
 - **Project 2**: Web Scraper
-  - Location: `semester-1-python/projects/web-scraper/`
+  - Location: `01-semester-python/projects/web-scraper/`
   - Skills: BeautifulSoup, requests, file I/O
 
 ### Semester 2 (Java)

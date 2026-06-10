@@ -22,7 +22,7 @@ git commit -m "Initial semester-wise project structure"
 
 ### 2. Current Semester (Semester 1 - Python)
 ```bash
-cd semester-1-python
+cd 01-semester-python
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -42,28 +42,28 @@ summer2026/
 │   ├── PLAN-2-VS-Code-Installation.md
 │   └── PLAN-3-Learning-Journey.md
 │
-├── semester-1-python/              # Python (Semester 1)
+├── 01-semester-python/             # Python (Semester 1)
 │   ├── coursework/
 │   ├── projects/
 │   ├── exercises/
 │   ├── requirements.txt
 │   └── SETUP.md
 │
-├── semester-2-java/                # Java (Semester 2)
+├── 02-semester-java/               # Java (Semester 2)
 │   ├── coursework/
 │   ├── projects/
 │   ├── exercises/
 │   ├── build.gradle
 │   └── SETUP.md
 │
-├── semester-3-c/                   # C (Semester 3)
+├── 03-semester-c/                  # C (Semester 3)
 │   ├── coursework/
 │   ├── projects/
 │   ├── exercises/
 │   ├── CMakeLists.txt
 │   └── SETUP.md
 │
-├── semester-4-cpp/                 # C++ (Semester 4)
+├── 04-semester-cpp/                # C++ (Semester 4)
 │   ├── coursework/
 │   ├── projects/
 │   ├── exercises/
@@ -83,25 +83,25 @@ summer2026/
 - Focus: Fundamentals & practical scripting
 - Topics: Variables, loops, functions, web scraping, data structures
 - Commitment: 10-15 hours/week
-- Start: See `semester-1-python/SETUP.md`
+- Start: See `01-semester-python/SETUP.md`
 
 ### Semester 2 (Java)
 - Focus: Object-Oriented Programming
 - Topics: Classes, inheritance, collections, streams
 - Commitment: 10-15 hours/week
-- Start: See `semester-2-java/SETUP.md`
+- Start: See `02-semester-java/SETUP.md`
 
 ### Semester 3 (C)
 - Focus: Low-level programming & memory management
 - Topics: Pointers, memory allocation, data structures, algorithms
 - Commitment: 10-15 hours/week
-- Start: See `semester-3-c/SETUP.md`
+- Start: See `03-semester-c/SETUP.md`
 
 ### Semester 4 (C++)
 - Focus: Modern C++ & advanced features
 - Topics: Classes, inheritance, STL, algorithms, template metaprogramming
 - Commitment: 10-15 hours/week
-- Start: See `semester-4-cpp/SETUP.md`
+- Start: See `04-semester-cpp/SETUP.md`
 
 ## 🔧 Development Environment
 
@@ -117,11 +117,11 @@ For detailed setup instructions, see `Plans/PLAN-2-VS-Code-Installation.md`
 ### Initial Commits
 ```bash
 # Semester 1 start
-git add semester-1-python/
+git add 01-semester-python/
 git commit -m "Start Semester 1 - Python Fundamentals"
 
 # After each major topic
-git add semester-1-python/coursework/web-scraping/
+git add 01-semester-python/coursework/web-scraping/
 git commit -m "Complete web scraping coursework"
 ```
 
@@ -160,12 +160,12 @@ gradle run
 
 ### C
 ```bash
-cd semester-3-c && mkdir -p build && cd build && cmake .. && make
+cd 03-semester-c && mkdir -p build && cd build && cmake .. && make
 ```
 
 ### C++
 ```bash
-cd semester-4-cpp && mkdir -p build && cd build && cmake .. && make
+cd 04-semester-cpp && mkdir -p build && cd build && cmake .. && make
 ```
 
 ## 🐛 Debugging
@@ -202,8 +202,8 @@ valgrind ./executable
 1. Review `PLAN-1-Repository-Structure.md` for file organization details
 2. Follow `PLAN-2-VS-Code-Installation.md` for environment setup
 3. Read `PLAN-3-Learning-Journey.md` for the complete learning roadmap
-4. Start with `semester-1-python/SETUP.md` for Python setup
-5. Begin Semester 1 coursework: `semester-1-python/coursework/fundamentals/`
+4. Start with `01-semester-python/SETUP.md` for Python setup
+5. Begin Semester 1 coursework: `01-semester-python/coursework/fundamentals/`
 
 ---
 

@@ -64,18 +64,18 @@ package-lock.json
 
 # ==================== SEMESTER-SPECIFIC ====================
 # Python venv per semester
-semester-1-python/venv/
-semester-1-python/.venv/
+01-semester-python/venv/
+01-semester-python/.venv/
 
 # Java build outputs
-semester-2-java/build/
-semester-2-java/.gradle/
+02-semester-java/build/
+02-semester-java/.gradle/
 
 # C build outputs
-semester-3-c/build/
+03-semester-c/build/
 
 # C++ build outputs
-semester-4-cpp/build/
+04-semester-cpp/build/
 
 # IDE and Editor configurations
 .vscode/settings.json
