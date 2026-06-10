@@ -1,0 +1,83 @@
+# Git ignore rules for multi-language project
+
+# ==================== PYTHON ====================
+*.py[cod]
+__pycache__/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+.mypy_cache/
+*.egg
+*.whl
+
+# ==================== JAVA ====================
+*.class
+*.jar
+*.war
+target/
+build/
+dist/
+.gradle/
+*.gradle.kts
+.classpath
+.project
+.settings/
+*.iml
+.idea/
+
+# ==================== C/C++ ====================
+*.o
+*.a
+*.out
+*.exe
+*.so
+*.dylib
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+.vscode/
+*.dSYM/
+*.su
+*.gch
+vgcore.*
+
+# ==================== GENERAL ====================
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.log
+*.code-workspace
+node_modules/
+package-lock.json
+
+# ==================== SEMESTER-SPECIFIC ====================
+# Python venv per semester
+semester-1-python/venv/
+semester-1-python/.venv/
+
+# Java build outputs
+semester-2-java/build/
+semester-2-java/.gradle/
+
+# C build outputs
+semester-3-c/build/
+
+# C++ build outputs
+semester-4-cpp/build/
+
+# IDE and Editor configurations
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json

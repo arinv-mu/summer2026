@@ -1,0 +1,21 @@
+# Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Data Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Testing
+pytest>=7.4.0
+
+# Code Quality
+pylint>=2.17.0
+black>=23.7.0
+
+# Debugging
+ipython>=8.12.0
+ipdb>=0.13.0
