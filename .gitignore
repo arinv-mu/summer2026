@@ -48,6 +48,22 @@ build/
 *.gch
 vgcore.*
 
+# C/C++ compiled binaries (executables without extensions)
+03-semester-c/01-coursework/*/[!.]*
+03-semester-c/04-LEARNING-MATERIALS/03-exercises/*/*
+!03-semester-c/**/*.c
+!03-semester-c/**/*.h
+!03-semester-c/**/*.md
+!03-semester-c/**/CMakeLists.txt
+!03-semester-c/**/Makefile*
+
+04-semester-cpp/01-coursework/*/[!.]*
+04-semester-cpp/04-LEARNING-MATERIALS/**/*
+!04-semester-cpp/**/*.cpp
+!04-semester-cpp/**/*.h
+!04-semester-cpp/**/*.md
+!04-semester-cpp/**/CMakeLists.txt
+
 # ==================== GENERAL ====================
 .DS_Store
 .AppleDouble
