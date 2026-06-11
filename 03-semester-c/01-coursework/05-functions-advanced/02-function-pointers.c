@@ -1,56 +1,62 @@
 /*
  * Topic: Functions - Advanced
- * Sample 2: Function Pointers
- * 
+ * Sample 2: Function Pointers and Callbacks
+ *
  * Demonstrates:
- * - function pointers
- * - callback functions
- * - higher-order functions
+ * - Function pointer declaration and initialization
+ * - Calling functions through pointers
+ * - Callback functions (passing functions as arguments)
+ * - Higher-order functions using function pointers
  */
 
 #include <stdio.h>
 
-int add(int a, int b) {
-    return a + b;
+int add(int a, int b)
+{
+  return a + b;
 }
 
-int subtract(int a, int b) {
-    return a - b;
+int subtract(int a, int b)
+{
+  return a - b;
 }
 
-int multiply(int a, int b) {
-    return a * b;
+int multiply(int a, int b)
+{
+  return a * b;
 }
 
 // Function that takes a function pointer as parameter
-int calculate(int a, int b, int (*operation)(int, int)) {
-    return operation(a, b);
+int calculate(int a, int b, int (*operation)(int, int))
+{
+  return operation(a, b);
 }
 
-int main() {
-    printf("=== Function Pointers Demo ===\n");
-    
-    int x = 10, y = 3;
-    
-    // Function pointer declarations
-    int (*funcPtr)(int, int);
-    
-    printf("\nUsing function pointers:\n");
-    
-    funcPtr = add;
-    printf("%d + %d = %d\n", x, y, funcPtr(x, y));
-    
-    funcPtr = subtract;
-    printf("%d - %d = %d\n", x, y, funcPtr(x, y));
-    
-    funcPtr = multiply;
-    printf("%d * %d = %d\n", x, y, funcPtr(x, y));
-    
-    // Using function pointer as callback
-    printf("\nUsing callback pattern:\n");
-    printf("calculate(%d, %d, add) = %d\n", x, y, calculate(x, y, add));
-    printf("calculate(%d, %d, subtract) = %d\n", x, y, calculate(x, y, subtract));
-    printf("calculate(%d, %d, multiply) = %d\n", x, y, calculate(x, y, multiply));
-    
-    return 0;
+int main()
+{
+  printf("=== Function Pointers Demo ===\n");
+
+  int x = 10, y = 3;
+
+  // Function pointer declarations
+  int (*funcPtr)(int, int);
+
+  printf("\nUsing function pointers:\n");
+
+  funcPtr = add;
+  printf("%d + %d = %d\n", x, y, funcPtr(x, y));
+
+  funcPtr = subtract;
+  printf("%d - %d = %d\n", x, y, funcPtr(x, y));
+
+  funcPtr = multiply;
+  printf("%d * %d = %d\n", x, y, funcPtr(x, y));
+
+  // Using function pointer as callback
+  printf("\nUsing callback pattern:\n");
+  printf("calculate(%d, %d, add) = %d\n", x, y, calculate(x, y, add));
+  printf("calculate(%d, %d, subtract) = %d\n", x, y, calculate(x, y, subtract));
+  printf("calculate(%d, %d, multiply) = %d\n", x, y, calculate(x, y, multiply));
+
+  return 0;
 }

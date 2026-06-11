@@ -1,26 +1,35 @@
 /*
- * Topic: Conditionals
- * Sample 2: Switch Statement
- * 
+ * Topic: Conditionals (if/else, switch)
+ * Sample 2: Switch-Case Statements
+ *
  * Demonstrates:
- * - switch-case statements
- * - break and default
- * - Day of week classification
+ * - switch-case statement structure
+ * - case labels with break statements
+ * - default case for unmatched values
+ * - Cleaner alternative to nested if-else
  */
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int day;
-    
+
     printf("=== Day of Week Classifier ===\n");
     printf("Enter day number (1-7): ");
-    scanf("%d", &day);
-    
-    switch(day) {
+
+    /* Input validation for scanf return value */
+    if (scanf("%d", &day) != 1) {
+        printf("Error: Invalid input. Please enter an integer.\n");
+        return 1;
+    }
+
+    /* Use switch for clean multi-way branching */
+    switch (day)
+    {
         case 1:
             printf("Monday - Start of work week\n");
-            break;
+            break;  /* break prevents fall-through to next case */
         case 2:
             printf("Tuesday\n");
             break;
@@ -39,9 +48,9 @@ int main() {
         case 7:
             printf("Sunday - Rest day\n");
             break;
-        default:
+        default:  /* handles all unmatched cases */
             printf("Invalid day number. Please enter 1-7.\n");
     }
-    
-    return 0;
+
+  return 0;
 }
