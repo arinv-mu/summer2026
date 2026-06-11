@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.20)
+project(MyProject)
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Source files
+set(SOURCES
+    src/main.cpp
+    src/utils.cpp
+)
+
+# Create executable
+add_executable(myapp ${SOURCES})
+
+# Include directories
+target_include_directories(myapp PRIVATE include)
+
+# Compiler flags
+target_compile_options(myapp PRIVATE -Wall -Wextra -Werror)
+
+# Optional: Enable testing
+enable_testing()
