@@ -37,12 +37,18 @@ python3 coursework/fundamentals/hello.py
 
 ```
 summer2026/
-├── Plans/                          # Planning documents
+├── README.md                       # Project overview (you are here)
+├── 02-LANGUAGES.md                 # Language selection guide
+├── 03-SEMESTER-NOTES.md            # Progress tracking
+├── 04-STATUS-QUO.md                # Current status
+├── 05-Plans/                       # Planning documents
+│   ├── 00-ENV-SETUP-GUIDE.md       # Environment setup guide
 │   ├── PLAN-1-Repository-Structure.md
 │   ├── PLAN-2-VS-Code-Installation.md
 │   └── PLAN-3-Learning-Journey.md
 │
 ├── 01-semester-python/             # Python (Semester 1)
+│   ├── 00-SETUP.md
 │   ├── 01-coursework/
 │   │   ├── 01-fundamentals/
 │   │   ├── 02-web-scraping/
@@ -54,10 +60,10 @@ summer2026/
 │   ├── 03-projects/
 │   │   ├── 01-simple-calculator/
 │   │   └── 02-web-scraper/
-│   ├── requirements.txt
-│   └── SETUP.md
+│   └── requirements.txt
 │
 ├── 02-semester-java/               # Java (Semester 2)
+│   ├── 00-SETUP.md
 │   ├── 01-coursework/
 │   │   ├── 01-fundamentals/
 │   │   ├── 02-collections-framework/
@@ -69,8 +75,7 @@ summer2026/
 │   ├── 03-projects/
 │   │   ├── 01-todo-app-cli/
 │   │   └── 02-library-management/
-│   ├── build.gradle
-│   └── SETUP.md
+│   └── build.gradle
 │
 ├── 03-semester-c/                  # C (Semester 3)
 │   ├── 01-coursework/
@@ -142,7 +147,7 @@ summer2026/
 - **Languages**: Python 3.12, Java 21, C (C17), C++ (C++20)
 - **Build Tools**: pip, Gradle, CMake, Make
 
-For detailed setup instructions, see `Plans/PLAN-2-VS-Code-Installation.md`
+For detailed setup instructions, see `05-Plans/PLAN-2-VS-Code-Installation.md`
 
 ## 📝 Git Workflow
 
@@ -240,6 +245,6 @@ valgrind ./executable
 
 ---
 
-**Last Updated**: 2026-06-10  
-**Current Focus**: Semester 1 - Python  
+**Last Updated**: 2026-06-10
+**Current Focus**: Semester 1 - Python
 **Estimated Completion**: 4 semesters (~1 year)

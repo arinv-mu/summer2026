@@ -13,27 +13,27 @@ Each semester folder contains a language-specific environment setup script:
    ├── activate-env.sh              # Python venv activation
    ├── venv/                        # Virtual environment
    ├── requirements.txt
-   ├── SETUP.md
+   ├── 00-SETUP.md
    └── ...
 
 📂 02-semester-java/
    ├── setup-env.sh                 # Java/Gradle setup
    ├── build.gradle
-   ├── SETUP.md
+   ├── 00-SETUP.md
    └── ...
 
 📂 03-semester-c/
    ├── setup-env.sh                 # C build environment
    ├── CMakeLists.txt
    ├── build/                       # (Created on first build)
-   ├── SETUP.md
+   ├── 00-SETUP.md
    └── ...
 
 📂 04-semester-cpp/
    ├── setup-env.sh                 # C++ build environment
    ├── CMakeLists.txt
    ├── build/                       # (Created on first build)
-   ├── SETUP.md
+   ├── 00-SETUP.md
    └── ...
 ```
 
@@ -295,6 +295,6 @@ source setup-env.sh
 
 ---
 
-**Last Updated**: June 10, 2026  
-**Scripts Created**: 4 (Python, Java, C, C++)  
+**Last Updated**: June 10, 2026
+**Scripts Created**: 4 (Python, Java, C, C++)
 **All Scripts Executable**: ✅ Yes

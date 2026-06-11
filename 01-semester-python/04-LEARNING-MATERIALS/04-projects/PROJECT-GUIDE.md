@@ -1,7 +1,7 @@
 # Python Semester Project: Web Scraper
 
-**Duration**: Weeks 19-20 (Final 2 weeks of semester)  
-**Difficulty**: Intermediate  
+**Duration**: Weeks 19-20 (Final 2 weeks of semester)
+**Difficulty**: Intermediate
 **Skills Used**: requests, BeautifulSoup, pandas, file I/O, testing
 
 ## Project Goals
@@ -43,7 +43,7 @@ Build a complete web scraper application that:
 
 ## Suggested Project: Weather Data Scraper
 
-**Target Website**: Weather.com or similar public data  
+**Target Website**: Weather.com or similar public data
 **Data to Extract**: City, Temperature, Conditions, Forecast
 
 ### Project Structure
@@ -75,21 +75,21 @@ from datetime import datetime
 
 def main():
     print("Starting weather scraper...")
-    
+
     # Scrape data
     cities = ['New York', 'Los Angeles', 'Chicago']
     weather_data = scrape_weather(cities)
-    
+
     # Process data
     processed_data = process_data(weather_data)
-    
+
     # Export to CSV
     filename = f'weather_{datetime.now().date()}.csv'
     with open(filename, 'w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=['city', 'temp', 'conditions', 'timestamp'])
         writer.writeheader()
         writer.writerows(processed_data)
-    
+
     print(f"✅ Data saved to {filename}")
 
 if __name__ == "__main__":
@@ -106,21 +106,21 @@ from bs4 import BeautifulSoup
 def scrape_weather(cities):
     """Scrape weather data for given cities."""
     weather_list = []
-    
+
     for city in cities:
         try:
             # Fetch page
             url = f"https://weather.example.com/{city}"
             response = requests.get(url, timeout=5)
             response.raise_for_status()
-            
+
             # Parse HTML
             soup = BeautifulSoup(response.content, 'html.parser')
-            
+
             # Extract data
             temp = soup.find('span', class_='temperature').text
             conditions = soup.find('div', class_='conditions').text
-            
+
             weather_list.append({
                 'city': city,
                 'temperature': temp,
@@ -128,7 +128,7 @@ def scrape_weather(cities):
             })
         except Exception as e:
             print(f"Error scraping {city}: {e}")
-    
+
     return weather_list
 ```
 
@@ -142,16 +142,16 @@ import pandas as pd
 def process_data(weather_data):
     """Process and clean weather data."""
     df = pd.DataFrame(weather_data)
-    
+
     # Add timestamp
     df['timestamp'] = datetime.now().isoformat()
-    
+
     # Remove duplicates
     df = df.drop_duplicates(subset=['city'])
-    
+
     # Convert to lowercase city names
     df['city'] = df['city'].str.lower()
-    
+
     return df.to_dict('records')
 ```
 

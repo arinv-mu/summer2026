@@ -1,0 +1,69 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99
+LDFLAGS =
+
+# Target executable
+TARGET = program
+
+# Source files (.c files in current directory)
+SOURCES = $(wildcard *.c)
+
+# Object files (one for each .c file)
+OBJECTS = $(SOURCES:.c=.o)
+
+# Default target - compile everything
+all: $(TARGET)
+
+# Link object files to create executable
+$(TARGET): $(OBJECTS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS) $(LDFLAGS)
+	@echo "✓ Build complete: $(TARGET)"
+
+# Compile .c files to .o object files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Run the program
+run: $(TARGET)
+	./$(TARGET)
+
+# Run with valgrind (memory checking)
+valgrind: $(TARGET)
+	valgrind --leak-check=full --show-leak-kinds=all ./$(TARGET)
+
+# Debug build - includes symbols, no optimization
+debug: CFLAGS += -g -DDEBUG -O0
+debug: clean $(TARGET)
+	@echo "✓ Debug build complete"
+
+# Release build - optimized, no symbols
+release: CFLAGS = -Wall -Wextra -std=c99 -O2
+release: clean $(TARGET)
+	@echo "✓ Release build complete"
+
+# Clean build artifacts
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "✓ Cleaned"
+
+# View program size
+size: $(TARGET)
+	size $(TARGET)
+
+# Help message
+help:
+	@echo "Available targets:"
+	@echo "  make            - Compile program (default)"
+	@echo "  make run        - Compile and run"
+	@echo "  make debug      - Compile with debug symbols"
+	@echo "  make release    - Optimized release build"
+	@echo "  make valgrind   - Run with memory checking"
+	@echo "  make clean      - Remove build artifacts"
+	@echo "  make size       - Show executable size"
+	@echo "  make help       - Show this help message"
+
+# Mark targets as phony (not files)
+.PHONY: all run debug release clean valgrind size help
+
+# Don't delete intermediate files
+.SECONDARY: $(OBJECTS)

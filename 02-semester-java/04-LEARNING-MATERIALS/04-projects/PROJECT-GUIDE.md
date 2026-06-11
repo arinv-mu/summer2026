@@ -1,7 +1,7 @@
 # Java Semester Project: TODO App CLI
 
-**Duration**: Weeks 19-20 (Final 2 weeks of semester)  
-**Difficulty**: Intermediate  
+**Duration**: Weeks 19-20 (Final 2 weeks of semester)
+**Difficulty**: Intermediate
 **Skills Used**: OOP, Collections, File I/O, Testing, Gradle
 
 ## Project Goals
@@ -67,21 +67,21 @@ public class Task {
     private int id;
     private String description;
     private boolean completed;
-    
+
     public Task(int id, String description) {
         this.id = id;
         this.description = description;
         this.completed = false;
     }
-    
+
     // Getters and setters
     public int getId() { return id; }
     public String getDescription() { return description; }
     public boolean isCompleted() { return completed; }
-    public void setCompleted(boolean completed) { 
-        this.completed = completed; 
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
-    
+
     @Override
     public String toString() {
         String status = completed ? "✓" : "○";
@@ -100,15 +100,15 @@ import java.util.List;
 public class TodoList {
     private ArrayList<Task> tasks = new ArrayList<>();
     private int nextId = 1;
-    
+
     public void addTask(String description) {
         tasks.add(new Task(nextId++, description));
     }
-    
+
     public void removeTask(int id) {
         tasks.removeIf(t -> t.getId() == id);
     }
-    
+
     public void markComplete(int id) {
         for (Task t : tasks) {
             if (t.getId() == id) {
@@ -117,11 +117,11 @@ public class TodoList {
             }
         }
     }
-    
+
     public List<Task> getTasks() {
         return new ArrayList<>(tasks);
     }
-    
+
     public void clear() {
         tasks.clear();
         nextId = 1;
@@ -138,21 +138,21 @@ import java.util.Scanner;
 public class App {
     private TodoList todoList;
     private Scanner scanner;
-    
+
     public App() {
         todoList = new TodoList();
         scanner = new Scanner(System.in);
     }
-    
+
     public void run() {
         System.out.println("📝 TODO App");
         System.out.println("-----------");
-        
+
         String command;
         while (true) {
             printMenu();
             command = scanner.nextLine().trim().toLowerCase();
-            
+
             switch (command) {
                 case "add":
                     addTask();
@@ -174,26 +174,26 @@ public class App {
             }
         }
     }
-    
+
     private void printMenu() {
         System.out.println("\n[add] [list] [complete] [remove] [quit]");
         System.out.print("> ");
     }
-    
+
     private void addTask() {
         System.out.print("Task description: ");
         String desc = scanner.nextLine();
         todoList.addTask(desc);
         System.out.println("✓ Task added");
     }
-    
+
     private void listTasks() {
         System.out.println("\nTasks:");
         for (Task t : todoList.getTasks()) {
             System.out.println("  " + t);
         }
     }
-    
+
     private void completeTask() {
         listTasks();
         System.out.print("Task ID to complete: ");
@@ -201,7 +201,7 @@ public class App {
         todoList.markComplete(id);
         System.out.println("✓ Task completed");
     }
-    
+
     private void removeTask() {
         listTasks();
         System.out.print("Task ID to remove: ");
@@ -209,7 +209,7 @@ public class App {
         todoList.removeTask(id);
         System.out.println("✓ Task removed");
     }
-    
+
     public static void main(String[] args) {
         new App().run();
     }
@@ -228,25 +228,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TodoListTest {
     private TodoList list;
-    
+
     @BeforeEach
     public void setup() {
         list = new TodoList();
     }
-    
+
     @Test
     public void testAddTask() {
         list.addTask("Buy milk");
         assertEquals(1, list.getTasks().size());
     }
-    
+
     @Test
     public void testRemoveTask() {
         list.addTask("Task 1");
         list.removeTask(1);
         assertEquals(0, list.getTasks().size());
     }
-    
+
     @Test
     public void testMarkComplete() {
         list.addTask("Do homework");

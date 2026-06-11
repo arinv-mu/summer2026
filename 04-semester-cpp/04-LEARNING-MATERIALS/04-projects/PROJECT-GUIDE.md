@@ -1,7 +1,7 @@
 # C++ Semester Project: Graphics Application or Game Engine
 
-**Duration**: Weeks 19-20 (Final 2 weeks of semester)  
-**Difficulty**: Advanced  
+**Duration**: Weeks 19-20 (Final 2 weeks of semester)
+**Difficulty**: Advanced
 **Skills Used**: OOP, STL, CMake, Memory Management, Testing
 
 ## Project Goals
@@ -65,15 +65,15 @@ class Shape {
 protected:
     std::string name;
     double x, y;  // Position
-    
+
 public:
     Shape(const std::string& name, double x, double y);
     virtual ~Shape() = default;
-    
+
     virtual double getArea() const = 0;
     virtual double getPerimeter() const = 0;
     virtual std::string toString() const = 0;
-    
+
     void move(double dx, double dy);
     double getX() const { return x; }
     double getY() const { return y; }
@@ -92,10 +92,10 @@ public:
 class Rectangle : public Shape {
 private:
     double width, height;
-    
+
 public:
     Rectangle(double x, double y, double w, double h);
-    
+
     double getArea() const override;
     double getPerimeter() const override;
     std::string toString() const override;
@@ -114,10 +114,10 @@ public:
 class Circle : public Shape {
 private:
     double radius;
-    
+
 public:
     Circle(double x, double y, double r);
-    
+
     double getArea() const override;
     double getPerimeter() const override;
     std::string toString() const override;
@@ -146,7 +146,7 @@ double Rectangle::getPerimeter() const {
 
 std::string Rectangle::toString() const {
     std::ostringstream oss;
-    oss << name << " at (" << x << "," << y 
+    oss << name << " at (" << x << "," << y
         << ") - " << width << "x" << height;
     return oss.str();
 }
@@ -165,12 +165,12 @@ std::string Rectangle::toString() const {
 
 int main() {
     std::vector<std::unique_ptr<Shape>> shapes;
-    
+
     // Create shapes
     shapes.push_back(std::make_unique<Rectangle>(0, 0, 10, 20));
     shapes.push_back(std::make_unique<Circle>(5, 5, 3));
     shapes.push_back(std::make_unique<Rectangle>(10, 10, 5, 5));
-    
+
     // Display shapes
     std::cout << "Shapes:\n";
     for (const auto& shape : shapes) {
@@ -178,14 +178,14 @@ int main() {
         std::cout << "    Area: " << shape->getArea() << "\n";
         std::cout << "    Perimeter: " << shape->getPerimeter() << "\n";
     }
-    
+
     // Calculate total area
     double totalArea = 0;
     for (const auto& shape : shapes) {
         totalArea += shape->getArea();
     }
     std::cout << "\nTotal area: " << totalArea << "\n";
-    
+
     return 0;
 }
 ```

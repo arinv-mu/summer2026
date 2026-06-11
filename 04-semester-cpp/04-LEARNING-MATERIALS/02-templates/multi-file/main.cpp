@@ -1,5 +1,5 @@
 // Multi-file C++ Example
-// 
+//
 // Directory structure:
 // include/
 // ├── utils.h

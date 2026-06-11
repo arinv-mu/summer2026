@@ -1,9 +1,9 @@
 # Project Status Quo - Electronics Engineering Learning Repository
 
-**Date**: June 11, 2026 (Updated)
-**Time Invested**: ~4 hours + 1 hour (learning materials & planning)
-**Current Phase**: PLAN-2/3 Transition - C Learning Materials Complete, Planning Python/Java/C++
-**Next Phase**: PLAN-3 - Create Learning Materials for Python/Java/C++, Begin Semester 1 Coursework
+**Date**: June 11, 2026
+**Time Invested**: ~5 hours
+**Current Phase**: PLAN-2 Extension - File Organization & Sequencing Complete
+**Next Phase**: PLAN-3 - Learning Journey (Semester 1 coursework start)
 
 ---
 
@@ -19,14 +19,37 @@
 - ✅ Created topic-based subfolders with numeric prefixes (01-03)
 - ✅ Total: 48 folders organized hierarchically
 
+### File Sequencing & Organization (PLAN-2 Extension)
+- ✅ Root level files/folders: Organized with proper prefixes (02-04 at root for student-facing content)
+  - `02-LANGUAGES.md`, `03-SEMESTER-NOTES.md`, `04-STATUS-QUO.md`, `05-Plans/`
+- ✅ Moved setup documentation to Plans: `05-Plans/00-ENV-SETUP-GUIDE.md`
+- ✅ All semester SETUP.md files: Renamed to `00-SETUP.md` for consistency
+- ✅ 03-semester-c special files: Renamed for proper organization
+  - `04-LEARNING-MATERIALS/` (was LEARNING-MATERIALS/)
+  - `05-FOLDER-STRUCTURE.md` (was FOLDER-STRUCTURE.md)
+- ✅ Guide file sequencing: Added prefixes to enforce reading order
+  - `00-INDEX.md` (was INDEX.md) - Navigation hub
+  - `01-LEARNING-GUIDE.md` (was LEARNING-GUIDE.md) - 20-week curriculum
+  - `02-COMPILATION-REFERENCE.md` (was COMPILATION-REFERENCE.md) - Build reference
+  - `03-DEBUGGING-GUIDE.md` (was DEBUGGING-GUIDE.md) - Troubleshooting guide
+- ✅ Template file sequencing: Added prefixes for logical use order
+  - `00-hello.c` (was hello.c) - First program
+  - `01-Makefile.template` (was Makefile.template) - Build template
+- ✅ Multi-file example sequencing: Added prefixes for understanding order
+  - `00-main.c` → `01-Makefile` → `02-utils.h` → `03-utils.c`
+- ✅ Documentation updates: Updated 40+ file path references across 8+ files
+  - README.md, 00-INDEX.md, 01-LEARNING-GUIDE.md, 02-COMPILATION-REFERENCE.md
+  - 03-DEBUGGING-GUIDE.md, 03-exercises/README.md, PROJECT-GUIDE.md, 05-FOLDER-STRUCTURE.md
+- ✅ Cross-reference verification: All links tested and working
+
 ### Planning Documentation
+- ✅ 00-ENV-SETUP-GUIDE.md (environment setup documentation) [moved to 05-Plans/]
 - ✅ PLAN-1: Repository Structure (with numeric prefix explanations) [in 05-Plans/]
 - ✅ PLAN-2: VS Code Installation (5 phases documented) [in 05-Plans/]
 - ✅ PLAN-3: Learning Journey (4-semester roadmap) [in 05-Plans/]
 - ✅ README.md (project overview)
 - ✅ 02-LANGUAGES.md (language reference guide)
 - ✅ 03-SEMESTER-NOTES.md (progress tracking template)
-- ✅ 01-ENV-SETUP-GUIDE.md (environment script documentation)
 
 ### Build & Environment Configuration
 - ✅ `01-semester-python/requirements.txt` (8 Python packages)
@@ -144,69 +167,13 @@
 
 ---
 
-### Semester 3 C Learning Materials (04-LEARNING-MATERIALS)
+### Semester 2-4 Python venv Equivalent
 
-**Status**: ✅ Complete
+**Status**: Not Started (only Semester 1 done)
 
-**Structure Created**:
-- ✅ `03-semester-c/04-LEARNING-MATERIALS/README.md` - Main entry point with quick reference table
-- ✅ `01-guides/00-INDEX.md` - Navigation hub with 15-week learning path
-- ✅ `01-guides/01-LEARNING-GUIDE-C.md` - Complete 15-week accelerated curriculum (5 phases, 69 hours)
-- ✅ `01-guides/02-COMPILATION-REFERENCE.md` - Build system and compilation reference
-- ✅ `01-guides/03-DEBUGGING-GUIDE.md` - Debugging scenarios and tools
-- ✅ `02-templates/` - Code examples (hello.c, Makefile template, multi-file structure)
-- ✅ `03-exercises/` - 15 week folders (week-01 through week-15) ready for exercises
-- ✅ `04-projects/` - Capstone project structure (simple-calculator with 4 milestones)
-
-**Curriculum Details**:
-- 5 Phases: Fast-Track Fundamentals → Functions & Modularity → Collections → Pointers & Memory (EXTENDED) → Data Structures & Capstone
-- 69 total hours across 15 weeks
-- Phase 4 (Pointers & Memory) given extended focus (26 hours, weeks 9-12) - C-specific mastery
-- 40+ resource links (Codecademy, Coursera, YouTube tutorials)
-
-**File References Updated**:
-- ✅ Updated 46 references across C semester docs: `01-LEARNING-GUIDE.md` → `01-LEARNING-GUIDE-C.md`
-- ✅ Files updated: 00-INDEX.md, README.md, 03-exercises/README.md, 04-projects/PROJECT-GUIDE.md, 00-SETUP.md, 05-FOLDER-STRUCTURE.md
-- ✅ 0 stale references remaining (verified with grep)
-
-### Learning Materials Planning Document
-
-**Status**: ✅ Complete
-
-**File**: `05-Plans/04-SETUP-LEARNING-MATERIALS.md` (Created and updated)
-
-**Content Added**:
-- ✅ C Summary Section - Corrected from 20-week to 15-week structure (5 phases, 69 hours)
-- ✅ Python Section - 10-week curriculum blueprint (45 hours, venv/pip focus, web scraping extended)
-  - Step-by-step guide for creating 04-LEARNING-MATERIALS structure
-  - Template specifications for hello.py, requirements.txt, multi-file examples
-  - 10-week structured learning path (fundamentals → OOP → libraries)
-  - 5 verification checklists
-
-- ✅ Java Section - 10-week curriculum blueprint (50 hours, Gradle focus, OOP/Collections extended)
-  - Step-by-step guide for Gradle-based learning materials
-  - Template specifications for HelloWorld.java, build.gradle, multi-file packages
-  - JUnit 5, Mockito testing framework integration
-  - 5 verification checklists
-
-- ✅ C++ Section - 10-week curriculum blueprint (55 hours, CMake/Modern C++ focus)
-  - Step-by-step guide for CMake-based learning materials
-  - Modern C++ (C++17/C++20) emphasis
-  - STL and game engine/graphics as practical capstone
-  - 5 verification checklists
-
-**Implementation Status**:
-- Python materials: Not yet created (ready with blueprint)
-- Java materials: Not yet created (ready with blueprint)
-- C++ materials: Not yet created (ready with blueprint)
-
-### Semester 2-4 Build System Dependencies
-
-**Status**: ✅ Complete (No venv needed)
-
-- ✅ Semester 2 (Java): Gradle handles dependencies
-- ✅ Semester 3 (C): CMake/Make handles build
-- ✅ Semester 4 (C++): CMake/Make handles build
+- [ ] Semester 2 (Java): No venv needed (Gradle handles dependencies)
+- [ ] Semester 3 (C): No venv needed (CMake/Make handles deps)
+- [ ] Semester 4 (C++): No venv needed (CMake/Make handles deps)
 
 ---
 
@@ -215,7 +182,8 @@
 | Category | Status | % Complete |
 |----------|--------|-----------|
 | Repository Structure | ✅ Done | 100% |
-| Documentation | ✅ Done | 100% |
+| File Sequencing & Organization | ✅ Done | 100% |
+| Documentation Updates | ✅ Done | 100% |
 | Build Configuration | ✅ Done | 100% |
 | Environment Scripts | ✅ Done | 100% |
 | Semester 1 Python Setup | ✅ Done | 100% |
@@ -225,42 +193,23 @@
 | Workspace Configuration | ✅ Done | 100% |
 | Language Testing (All 4) | ✅ Done | 100% |
 | Git Version Control | ✅ Done | 100% |
-| C Semester Learning Materials | ✅ Done | 100% |
-| Multi-Language Planning Document | ✅ Done | 100% |
-| **OVERALL PROJECT (PLAN-1, PLAN-2, + Learning Materials)** | ✅ **Complete** | **100%** |
+| **OVERALL PROJECT (PLAN-1, PLAN-2, Extensions)** | ✅ **Complete** | **100%** |
 
 ---
 
 ## 🎯 Recommended Next Session Plan
 
-### Session 4 (Next): PLAN-3 - Create Learning Materials & Begin Coursework
+### Session 3 (Next): PLAN-3 - Learning Journey
 
-**Objective**: Create Python/Java/C++ learning materials; begin Semester 1 Python coursework
+**Objective**: Begin Semester 1 Python coursework
 
-**Timeline**: Weeks 1-15 for each semester (weeks vary by pace)
+**Timeline**: Varies by learning pace (weeks/months)
 
-**Phase 1 - Create Learning Materials** (1-2 sessions):
-1. **Python** - Create 04-LEARNING-MATERIALS/ following blueprint
-   - Use planning document: `05-Plans/04-SETUP-LEARNING-MATERIALS.md` Python section
-   - Create: 4 guide files, 3 templates, 10 exercise weeks, capstone project
-   - Time: ~2-3 hours
-
-2. **Java** - Create 04-LEARNING-MATERIALS/ following blueprint
-   - Use planning document: `05-Plans/04-SETUP-LEARNING-MATERIALS.md` Java section
-   - Create: 4 guide files, 3 templates, 10 exercise weeks, capstone project
-   - Time: ~2-3 hours
-
-3. **C++** - Create 04-LEARNING-MATERIALS/ following blueprint
-   - Use planning document: `05-Plans/04-SETUP-LEARNING-MATERIALS.md` C++ section
-   - Create: 4 guide files, 3 templates, 10 exercise weeks, capstone project
-   - Time: ~2-3 hours
-
-**Phase 2 - Begin Coursework** (Starting immediate):
+**Starting Points**:
 1. **Semester 1 (Python)** - Start with fundamentals coursework
    - Review `01-semester-python/01-coursework/01-fundamentals/`
    - Use Python venv: `source 01-semester-python/activate-env.sh`
    - Run tasks: Use Cmd+Shift+B to access build tasks
-   - Learning path: Follow `01-semester-python/04-LEARNING-MATERIALS/01-guides/00-INDEX.md` (10-week structure)
 
 2. **Track Progress**: Update `SEMESTER-NOTES.md` with learnings
 
@@ -318,68 +267,76 @@ make -C build
 
 ```
 summer2026/
+├── README.md ✅
+├── 02-LANGUAGES.md ✅
+├── 03-SEMESTER-NOTES.md ✅
+├── 04-STATUS-QUO.md ✅
+├── 05-Plans/
+│   ├── 00-ENV-SETUP-GUIDE.md ✅
+│   ├── 01-PLAN-1-Repository-Structure.md ✅
+│   ├── 02-PLAN-2-VS-Code-Installation.md ✅
+│   ├── 03-PLAN-3-Learning-Journey.md ✅
+│   └── 04-SETUP-LEARNING-MATERIALS.md ✅
+├── README.md ✅
 ├── 01-semester-python/
+│   ├── 00-SETUP.md ✅
 │   ├── 01-coursework/01-fundamentals/
 │   │   └── hello.py ✅
 │   ├── 02-exercises/
 │   ├── 03-projects/
 │   ├── venv/ ✅
 │   ├── activate-env.sh ✅
-│   ├── requirements.txt ✅
-│   └── SETUP.md ✅
+│   └── requirements.txt ✅
 ├── 02-semester-java/
+│   ├── 00-SETUP.md ✅
 │   ├── 01-coursework/01-fundamentals/
 │   │   └── HelloWorld.java ✅
 │   ├── 02-exercises/
 │   ├── 03-projects/
 │   ├── setup-env.sh ✅
-│   ├── build.gradle ✅
-│   └── SETUP.md ✅
+│   └── build.gradle ✅
 ├── 03-semester-c/
+│   ├── 00-SETUP.md ✅
+│   ├── 04-LEARNING-MATERIALS/
+│   │   ├── README.md ✅
+│   │   ├── 01-guides/
+│   │   │   ├── 00-INDEX.md ✅
+│   │   │   ├── 01-LEARNING-GUIDE.md ✅
+│   │   │   ├── 02-COMPILATION-REFERENCE.md ✅
+│   │   │   └── 03-DEBUGGING-GUIDE.md ✅
+│   │   ├── 02-templates/
+│   │   │   ├── 00-hello.c ✅
+│   │   │   ├── 01-Makefile.template ✅
+│   │   │   └── multi-file/
+│   │   │       ├── 00-main.c ✅
+│   │   │       ├── 01-Makefile ✅
+│   │   │       ├── 02-utils.h ✅
+│   │   │       └── 03-utils.c ✅
+│   │   ├── 03-exercises/
+│   │   └── 04-projects/
+│   ├── 05-FOLDER-STRUCTURE.md ✅
 │   ├── 01-coursework/01-fundamentals/
 │   │   ├── hello.c ✅
 │   │   └── hello (executable) ✅
 │   ├── 02-exercises/
 │   ├── 03-projects/
-│   ├── 04-LEARNING-MATERIALS/ ✅
-│   │   ├── README.md (Quick reference)
-│   │   ├── 01-guides/
-│   │   │   ├── 00-INDEX.md (15-week navigation hub)
-│   │   │   ├── 01-LEARNING-GUIDE-C.md (15-week curriculum)
-│   │   │   ├── 02-COMPILATION-REFERENCE.md
-│   │   │   └── 03-DEBUGGING-GUIDE.md
-│   │   ├── 02-templates/ (hello.c, Makefile, examples)
-│   │   ├── 03-exercises/ (week-01 through week-15)
-│   │   └── 04-projects/ (simple-calculator, milestones)
 │   ├── setup-env.sh ✅
-│   ├── CMakeLists.txt ✅
-│   ├── SETUP.md ✅
-│   └── 05-FOLDER-STRUCTURE.md ✅
+│   └── CMakeLists.txt ✅
 ├── 04-semester-cpp/
+│   ├── 00-SETUP.md ✅
 │   ├── 01-coursework/01-fundamentals/
 │   │   ├── hello.cpp ✅
 │   │   └── hello (executable) ✅
 │   ├── 02-exercises/
 │   ├── 03-projects/
 │   ├── setup-env.sh ✅
-│   ├── CMakeLists.txt ✅
-│   └── SETUP.md ✅
-├── 05-Plans/
-│   ├── PLAN-1-Repository-Structure.md ✅
-│   ├── PLAN-2-VS-Code-Installation.md ✅
-│   ├── PLAN-3-Learning-Journey.md ✅
-│   └── 04-SETUP-LEARNING-MATERIALS.md ✅ (NEW)
+│   └── CMakeLists.txt ✅
 ├── .vscode/
 │   ├── settings.json ✅
 │   ├── launch.json ✅
 │   └── tasks.json ✅
-├── README.md ✅
-├── LANGUAGES.md ✅
-├── SEMESTER-NOTES.md ✅
-├── ENV-SETUP-GUIDE.md ✅
-├── STATUS-QUO.md ✅
 ├── .gitignore ✅
-└── .git/ ✅ (8 commits)
+└── .git/ ✅ (12 commits)
 ```
 
 ---
@@ -421,7 +378,43 @@ make -C build
 
 ---
 
-## 📄 Important Notes
+## 🎯 What Was Achieved: File Sequencing & Organization
+
+### The Problem
+Files were displaying alphabetically in file explorer, making navigation confusing:
+- Guides appeared as: COMPILATION-REFERENCE.md → DEBUGGING-GUIDE.md → INDEX.md → LEARNING-GUIDE.md
+- Templates appeared as: Makefile.template → hello.c → multi-file/
+- Multi-file examples appeared as: main.c → Makefile → utils.c → utils.h (wrong order!)
+- This contradicted the intended learning sequence documented in README files
+
+### The Solution
+Applied **numerical prefixes** at all hierarchy levels to enforce logical reading order:
+1. **Root level**: 01- through 05- prefixes on top-level items
+2. **Semester level**: 00-SETUP.md enforces this as first file read
+3. **Guides folder**: 00-INDEX → 01-LEARNING-GUIDE → 02-COMPILATION → 03-DEBUGGING
+4. **Templates folder**: 00-hello.c → 01-Makefile.template → multi-file examples
+5. **Multi-file examples**: 00-main.c → 01-Makefile → 02-utils.h → 03-utils.c
+
+### The Result
+✅ **Files now display in logical reading order** (not alphabetical)
+✅ **Student navigation matches intended learning path**
+✅ **All 40+ cross-references updated for consistency**
+✅ **File explorer is now an effective teaching tool**
+
+Example navigation now works correctly:
+```
+Open 03-semester-c/04-LEARNING-MATERIALS/
+├── README.md         ← Read this first
+├── 01-guides/
+│   ├── 00-INDEX.md              ← START: Navigation hub
+│   ├── 01-LEARNING-GUIDE.md     ← THEN: Study the curriculum
+│   ├── 02-COMPILATION-REFERENCE.md ← THEN: Learn to build
+│   └── 03-DEBUGGING-GUIDE.md    ← WHEN NEEDED: Fix problems
+```
+
+---
+
+## 📝 Important Notes
 
 - **Python Version**: Using 3.9.6 (tested, all dependencies working)
 - **Java Path**: Added to ~/.zshrc as `/opt/homebrew/opt/openjdk@21/bin`
@@ -429,51 +422,44 @@ make -C build
 - **VS Code Ready**: All extensions installed, workspace config complete
 - **All Tests Passing**: Python, Java, C, and C++ hello programs all execute successfully
 - **Git Remote**: Repository pushed to GitHub (https://github.com/arinv-mu/summer2026.git)
-- **C Learning Materials**: ✅ Complete with 15-week curriculum, 5 pedagogical phases
-- **Planning Blueprints**: ✅ Python (45 hrs), Java (50 hrs), C++ (55 hrs) ready for implementation
-- **Ready to Learn**: Full development environment + C curriculum ready; Python/Java/C++ materials queued
+- **File Organization**: All files now use numerical prefixes to enforce reading/learning order
+- **Documentation Consistency**: All 40+ cross-references updated and verified working
+- **Ready to Learn**: Full development environment ready, all materials properly sequenced for Semester 1 Python coursework
 
 ---
 
 ## 🎓 Learning Status - READY TO START
 
-**Semester 1 (Python)**: ✅ Environment Ready, Materials Queued
+**Semester 1 (Python)**: ✅ Environment Complete & Ready
 - Environment: ✅ venv active
 - Dependencies: ✅ 8 packages installed
 - IDE: ✅ Configured with black formatter, pylint linter
 - Test: ✅ hello.py passing
-- Learning Materials: ⏳ Queued (blueprint in 05-Plans/04-SETUP-LEARNING-MATERIALS.md)
-- Status: ✅ **READY FOR COURSEWORK** (materials creation step 1)
+- Status: ✅ **READY FOR COURSEWORK**
 
-**Semester 2 (Java)**: ✅ Environment Ready, Materials Queued
+**Semester 2 (Java)**: ✅ Environment Complete & Ready
 - Compiler: ✅ javac 21.0.11
 - Build Tool: ✅ Gradle 9.5.1
 - IDE: ✅ Java extension pack (6 extensions)
 - Test: ✅ HelloWorld.java compiles & runs
-- Learning Materials: ⏳ Queued (blueprint in 05-Plans/04-SETUP-LEARNING-MATERIALS.md)
-- Status: ✅ **READY FOR COURSEWORK** (materials creation step 2)
+- Status: ✅ **READY FOR COURSEWORK**
 
-**Semester 3 (C)**: ✅ Environment Complete, Curriculum Ready
+**Semester 3 (C)**: ✅ Environment Complete & Ready
 - Compiler: ✅ Apple clang (C17 standard)
 - Build System: ✅ CMake 4.3.3 + GNU Make
 - IDE: ✅ C/C++ IntelliSense & debugging
 - Test: ✅ hello.c compiles & runs
-- Learning Materials: ✅ Complete (15-week curriculum, 5 phases, 69 hours)
-- Curriculum Path: `03-semester-c/04-LEARNING-MATERIALS/01-guides/00-INDEX.md`
-- Status: ✅ **READY FOR COURSEWORK** (materials complete)
+- Status: ✅ **READY FOR COURSEWORK**
 
-**Semester 4 (C++)**: ✅ Environment Complete, Materials Queued
+**Semester 4 (C++)**: ✅ Environment Complete & Ready
 - Compiler: ✅ Apple clang++ (C++20 standard)
 - Build System: ✅ CMake 4.3.3 + GNU Make
 - IDE: ✅ C/C++ IntelliSense & debugging
 - Test: ✅ hello.cpp compiles & runs
-- Learning Materials: ⏳ Queued (blueprint in 05-Plans/04-SETUP-LEARNING-MATERIALS.md, 10-week/55-hour modern C++)
-- Status: ✅ **READY FOR COURSEWORK** (materials creation step 4)
+- Status: ✅ **READY FOR COURSEWORK**
 
 ---
 
-**Last Updated**: June 11, 2026 (Session 2 - Learning Materials)
-**Status**: 🎉 PLAN-1 & PLAN-2 COMPLETE + C CURRICULUM COMPLETE - Ready for PLAN-3 (Coursework & Material Creation)
-**Next Phase**:
-  1. Create Python/Java/C++ learning materials (use 05-Plans/04-SETUP-LEARNING-MATERIALS.md)
-  2. Begin Semester 1 Python coursework from `01-semester-python/01-coursework/01-fundamentals/`
+**Last Updated**: June 11, 2026
+**Status**: 🎉 PLAN-1 & PLAN-2 COMPLETE - Ready for PLAN-3 (Coursework)
+**Next Phase**: Begin Semester 1 Python coursework from `01-semester-python/01-coursework/01-fundamentals/`

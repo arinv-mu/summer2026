@@ -31,20 +31,28 @@ make
 
 ```
 03-semester-c/
-├── 01-coursework/
-│   ├── 01-fundamentals/       # Syntax, functions, basic I/O
-│   ├── 02-pointers-memory/    # Pointers, malloc, free, valgrind
-│   └── 03-data-structures/    # Arrays, structs, linked lists
-├── 02-exercises/
-│   ├── 01-fundamentals/       # Practice problems
-│   ├── 02-pointers-memory/    # Memory management challenges
-│   └── 03-data-structures/    # DS implementation
-├── 03-projects/
-│   ├── 01-shell-interpreter/  # Simple shell implementation
-│   └── 02-data-structures-lib/ # Reusable C library
-├── CMakeLists.txt             # CMake build configuration
-├── build/                     # Build artifacts (gitignored)
-└── SETUP.md                   # This file
+├── 00-SETUP.md                      (This file)
+├── CMakeLists.txt
+├── 01-coursework/                   (YOUR COURSEWORK - 15 weeks, summer pace)
+│   ├── week-01/                        (Variables, Data Types, Operators & I/O)
+│   ├── week-02/                        (Decision Making & Conditionals)
+│   ├── week-03/                        (Loops & Iteration)
+│   ├── week-04/                        (Functions: Basics)
+│   ├── week-05/                        (Functions: Advanced)
+│   ├── week-06/                        (Build Systems & Headers)
+│   ├── week-07/                        (Arrays)
+│   ├── week-08/                        (Strings)
+│   ├── week-09/                        (Pointer Fundamentals)
+│   ├── week-10/                        (Pointer Applications)
+│   ├── week-11/                        (Dynamic Memory)
+│   ├── week-12/                        (Pointer-to-Pointer & Advanced Memory)
+│   ├── week-13/                        (Structures & Complex Types)
+│   ├── week-14/                        (Structures with Pointers & Linked Lists)
+│   └── week-15/                        (File I/O & Wrap-up)
+├── 03-projects/                     (SEMESTER PROJECTS)
+│   ├── 01-shell-interpreter/
+│   └── 02-data-structures-lib/
+└── 04-LEARNING-MATERIALS/           ⭐ MASTER RESOURCE FOLDER
 ```
 
 ## Build Configuration (CMakeLists.txt)

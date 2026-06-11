@@ -401,11 +401,11 @@ using namespace std;
 int main() {
     int x = 5;
     cout << "DEBUG: x = " << x << "\n";
-    
+
     for (int i = 0; i < 10; i++) {
         cout << "DEBUG: i = " << i << "\n";  // Track loop
     }
-    
+
     return 0;
 }
 ```

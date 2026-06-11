@@ -1,5 +1,5 @@
 # Multi-file Python Package Example
-# 
+#
 # Directory structure:
 # mypackage/
 # ├── __init__.py      (makes it a package)

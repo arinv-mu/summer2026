@@ -1,0 +1,48 @@
+# Makefile for multi-file C project
+
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -g
+TARGET = program
+
+# All source files
+SOURCES = main.c utils.c
+
+# Object files (one for each source)
+OBJECTS = $(SOURCES:.c=.o)
+
+# Build target
+all: $(TARGET)
+
+# Link object files
+$(TARGET): $(OBJECTS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS)
+	@echo "✓ Multi-file build complete"
+
+# Compile each .c to .o
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Run program
+run: $(TARGET)
+	./$(TARGET)
+
+# Debug with GDB
+debug: $(TARGET)
+	gdb ./$(TARGET)
+
+# Check memory leaks
+valgrind: $(TARGET)
+	valgrind --leak-check=full ./$(TARGET)
+
+# Clean
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "✓ Cleaned"
+
+# Show files
+list:
+	@echo "Source files: $(SOURCES)"
+	@echo "Object files: $(OBJECTS)"
+	@echo "Target: $(TARGET)"
+
+.PHONY: all run debug valgrind clean list
